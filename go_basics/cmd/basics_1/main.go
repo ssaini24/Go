@@ -6,6 +6,10 @@ import (
 )
 
 func main() {
+	executeFunctionsAndControlsPkg()
+}
+
+func executeFunctionsAndControlsPkg() {
 	// Using AddNumbers
 	sum := functions_and_control.AddNumbers(5, 10)
 	fmt.Println("Sum:", sum)
