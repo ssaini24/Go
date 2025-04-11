@@ -2,11 +2,28 @@ package main
 
 import (
 	"fmt"
+	"go_basics/pkg/array_slices_maps_loops"
 	"go_basics/pkg/functions_and_control"
+	"go_basics/pkg/strings_runes_bytes"
+	"go_basics/pkg/structs_interfaces"
 )
 
 func main() {
 	executeFunctionsAndControlsPkg()
+	executeArraysSlicesMapsLoopsPkg()
+	strings_runes_bytes.Init()
+	executeStructsInterfaces()
+}
+
+func executeStructsInterfaces() {
+	var gasEngine structs_interfaces.GasEngine
+	gasEngine.Mpg = 10
+	gasEngine.Gallons = 1
+	structs_interfaces.CanMakeIt(gasEngine, 100)
+}
+
+func executeArraysSlicesMapsLoopsPkg() {
+	array_slices_maps_loops.Init()
 }
 
 func executeFunctionsAndControlsPkg() {
