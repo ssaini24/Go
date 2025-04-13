@@ -3,7 +3,11 @@ package main
 import (
 	"fmt"
 	"go_basics/pkg/array_slices_maps_loops"
+	"go_basics/pkg/channels"
 	"go_basics/pkg/functions_and_control"
+	"go_basics/pkg/generics"
+	"go_basics/pkg/goroutines"
+	"go_basics/pkg/pointers"
 	"go_basics/pkg/strings_runes_bytes"
 	"go_basics/pkg/structs_interfaces"
 )
@@ -13,6 +17,10 @@ func main() {
 	executeArraysSlicesMapsLoopsPkg()
 	strings_runes_bytes.Init()
 	executeStructsInterfaces()
+	pointers.Init()
+	goroutines.Init()
+	channels.Init()
+	generics.Init()
 }
 
 func executeStructsInterfaces() {
